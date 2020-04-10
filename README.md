@@ -1,4 +1,7 @@
 ## Translating all the words
+![npm](https://img.shields.io/npm/dm/google-translate-client)![Codecov](https://img.shields.io/codecov/c/github/nickfoden/google-translate-client)
+![npm bundle size](https://img.shields.io/bundlephobia/min/![Codecov](https://img.shields.io/codecov/c/github/nickfoden/google-translate-client))
+![GitHub stars](https://img.shields.io/github/stars/nickfoden/google-translate-client?style=social)
 
 
 
