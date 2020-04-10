@@ -36,7 +36,14 @@ import {translateClient} from "../myfiles/api/gcloud.js"
 Takes 2 arguments - the text and the language you wish to translate to
 
 ```javascript
-translateClient("cat", "es")
+   translateClient("ozark or stranger things ?", "es").then(
+      (result) => console.dir(result)
+      //result has a key data with the translated text and the detected source language
+      // {data: {
+      //   translatedText: "¿Ozark o cosas más extrañas?",
+      //   detectedSourceLanguage: "en",
+      // }}
+    );
 ```
 
 Sweet now more people can interpret your content!
