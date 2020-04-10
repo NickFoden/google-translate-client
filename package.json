@@ -1,6 +1,6 @@
 {
   "name": "google-translate-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -12,7 +12,16 @@
   "files": [
     "build"
   ],
-  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/NickFoden/google-translate-client/issues"
+  },
+  "homepage": "https://github.com/NickFoden/google-translate-client",
+  "keywords": [
+    "google",
+    "google translate",
+    "translate",
+    "react"
+  ],
   "author": "@nickfoden",
   "license": "ISC",
   "devDependencies": {
