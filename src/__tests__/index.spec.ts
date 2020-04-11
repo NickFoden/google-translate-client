@@ -15,11 +15,20 @@ test("Function defaults to cat translation to spanish", async () => {
   });
 });
 
-test("pass a bad api key", async () => {
-  const params = { apiKey: "666" };
+test("Function translate cow to spanish", async () => {
+  const params = { apiKey: GoogleApiKey };
   const theClient = createClient(params);
-  const data = await theClient("");
+  const data = await theClient("cow", "es");
   expect(data).toStrictEqual({
-    data: "Try another word or Double check your api key is valid",
+    data: { detectedSourceLanguage: "en", translatedText: "vaca" },
+  });
+});
+
+test("Function translate sky in italian", async () => {
+  const params = { apiKey: GoogleApiKey };
+  const theClient = createClient(params);
+  const data = await theClient("cow", "it");
+  expect(data).toStrictEqual({
+    data: { detectedSourceLanguage: "en", translatedText: "mucca" },
   });
 });

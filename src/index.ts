@@ -26,13 +26,11 @@ export const createClient = (params: ParamsObject) => {
         .then((result) => {
           if (result && result.data) {
             resolve({ data: result.data.translations[0] });
-          } else {
-            resolve({
-              data: "Try another word or Double check your api key is valid",
-            });
+          } else if (result && result.error) {
+            reject(result.error);
           }
         })
-        .catch((err) => reject(Error(err)));
+        .catch((err) => reject(err));
     });
   };
 

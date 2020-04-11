@@ -22,13 +22,11 @@ var createClient = function (params) {
                 if (result && result.data) {
                     resolve({ data: result.data.translations[0] });
                 }
-                else {
-                    resolve({
-                        data: "Try another word or Double check your api key is valid",
-                    });
+                else if (result && result.error) {
+                    reject(result.error);
                 }
             })
-                .catch(function (err) { return reject(Error(err)); });
+                .catch(function (err) { return reject(err); });
         });
     };
     return translate;
