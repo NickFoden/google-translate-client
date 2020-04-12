@@ -1,7 +1,7 @@
 ## Translating all the words
 
 ![npm](https://img.shields.io/npm/dm/google-translate-client)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/google-translate-client)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/google-translate-client@0.0.5)
 ![GitHub stars](https://img.shields.io/github/stars/nickfoden/google-translate-client?style=social)
 
 **Will need api key from google cloud**
