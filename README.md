@@ -14,7 +14,7 @@ Getting started:
 npm i google-translate-client
 ```
 
-Intialize the client
+Initialize the client
 
 ```javascript
 "../myfiles/api/gcloud.js";
