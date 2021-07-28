@@ -20,7 +20,7 @@ export const createClient = (params: ParamsObject) => {
   const translate = (word = "cat", language = "es") => {
     const formattedWord = word.trim();
     const googUrl = `https://translation.googleapis.com/language/translate/v2?target=${language}&key=${API_KEY}&q=${formattedWord}`;
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
       fetch(googUrl)
         .then((data) => data.json())
         .then((result) => {

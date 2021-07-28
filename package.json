@@ -26,16 +26,16 @@
   "license": "ISC",
   "devDependencies": {
     "@types/isomorphic-fetch": "0.0.35",
-    "@types/jest": "^25.2.1",
+    "@types/jest": "^25.2.3",
     "isomorphic-fetch": "^2.2.1",
-    "jest": "^25.3.0",
-    "rollup": "^1.27.13",
+    "jest": "^25.5.4",
+    "rollup": "^1.32.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.25.3",
-    "ts-jest": "^25.3.1",
-    "typescript": "^3.7.3"
+    "ts-jest": "^25.5.1",
+    "typescript": "^3.9.10"
   },
   "jest": {
     "preset": "ts-jest",
@@ -45,6 +45,6 @@
     "node": "14"
   },
   "volta": {
-    "node": "14.15.4"
+    "node": "14.17.3"
   }
 }
